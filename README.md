@@ -1,1 +1,1 @@
-# scandiweb
+# Junior Web Developer Test
