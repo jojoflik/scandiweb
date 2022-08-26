@@ -1,0 +1,65 @@
+.product_add{
+	width: 100%;
+	max-height: 80%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.product_add form{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.product_add .form__input__text{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.product_add .form__input__inputs{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.product_add .form__input__inputs input{
+	color: #000;
+	font-weight: 700;
+	padding-left: 2px;
+	border: 2px solid #000;
+	background: #fff;
+}
+.product_add .form__input select{
+	color: #000;
+	font-weight: 700;
+	border: 2px solid #000;
+	background: #fff;
+}
+.submit{
+	background: transparent;
+	border: 0;
+	text-decoration: none;
+}
+.product_add .form__products{
+	display: flex;
+	gap: 15px;
+}
+.product_add .form__other{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.product_add .form__other input{
+	color: #000;
+	font-weight: 700;
+	padding-left: 2px;
+	border: 2px solid #000;
+	background: #fff;
+}
+#input-error{
+	margin-left: 10px;
+	color: red;
+	font-weight: 700;
+}
+.wrapper .product_add form .form__other.disabl{
+	display: none;
+}

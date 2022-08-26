@@ -1,0 +1,47 @@
+.products{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	width: 100%;
+	max-height: 80%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.products .product{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 40px;
+	border: 3px solid #000;
+	border-radius: 2px;
+}
+.products .product.active{
+	background: rgba(196, 77, 86, .9);
+}
+.products .product .delete-checkbox{
+	position: absolute;
+	left: 8px;
+	top: 8px;
+}
+.products .product .info{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+@media (max-width: 450px){
+	.wrapper .products{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.wrapper .products .product{
+		padding: 30px 30px;
+	}
+}
+@media (max-width: 350px){
+	.wrapper .products{
+		grid-template-columns: 1fr;
+	}
+}
